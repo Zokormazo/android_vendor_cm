@@ -53,7 +53,8 @@ PRODUCT_COPY_FILES += \
 PRODUCT_COPY_FILES +=  \
     vendor/cm/proprietary/RomManager.apk:system/app/RomManager.apk \
     vendor/cm/proprietary/Term.apk:system/app/Term.apk \
-    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so
+    vendor/cm/proprietary/lib/armeabi/libjackpal-androidterm4.so:system/lib/libjackpal-androidterm4.so \
+	vendor/cm/prebuilt/common/apps/Superuser.apk:system/app/Superuser.apk
 
 # Bring in camera effects
 PRODUCT_COPY_FILES +=  \
@@ -81,8 +82,6 @@ PRODUCT_PACKAGES += \
     Development \
     LatinIME \
     SpareParts \
-    Superuser \
-    Superuser.apk \
     su
 
 # Optional CM packages
@@ -120,8 +119,8 @@ PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/cm/overlay/common
 
 PRODUCT_VERSION_MAJOR = 9
-PRODUCT_VERSION_MINOR = 0
-PRODUCT_VERSION_MAINTENANCE = 0-RC2
+PRODUCT_VERSION_MINOR = 1
+PRODUCT_VERSION_MAINTENANCE = 0
 
 # Set CM_BUILDTYPE
 ifdef CM_NIGHTLY
