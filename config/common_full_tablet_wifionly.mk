@@ -19,7 +19,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.config.notification_sound=CyanMessage.ogg \
     ro.config.alarm_alert=CyanAlarm.ogg
 
-ifeq ($(TARGET_BOOTANIMATION_NAME),)
+# BT config
+PRODUCT_COPY_FILES += \
+    system/bluetooth/data/main.nonsmartphone.conf:system/etc/bluetooth/main.conf
+
+ifeq ($(TARGET_SCREEN_WIDTH) $(TARGET_SCREEN_HEIGHT),$(space))
     PRODUCT_COPY_FILES += \
-        vendor/cm/prebuilt/common/bootanimation/horizontal-1280x800.zip:system/media/bootanimation.zip
+        vendor/cm/prebuilt/common/bootanimation/800.zip:system/media/bootanimation.zip
 endif
