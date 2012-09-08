@@ -23,7 +23,6 @@ add_lunch_combo cm_grouper-userdebug
 #add_lunch_combo cm_iyokan-userdebug
 #add_lunch_combo cm_mango-userdebug
 add_lunch_combo cm_maguro-userdebug
-add_lunch_combo cm_maguro-custom-userdebug
 #add_lunch_combo cm_n7000-userdebug
 #add_lunch_combo cm_p1-userdebug
 #add_lunch_combo cm_p1c-userdebug
